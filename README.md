@@ -32,8 +32,8 @@ Users should be able to:
 
 ![https://countries-fg.netlify.app/](./screenshot-countries-light.jpeg)
 ![https://countries-fg.netlify.app/](./screenshot-countries-dark.jpeg)
-![https://countries-fg.netlify.app/](./screenshot-country-light.jpg)
-![https://countries-fg.netlify.app/](./screenshot-country-dark.jpg)
+![https://countries-fg.netlify.app/countries/Belgium](./screenshot-country-light.jpg)
+![https://countries-fg.netlify.app/countries/Belgium](./screenshot-country-dark.jpg)
 
 ### Links
 
