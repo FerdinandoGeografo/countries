@@ -1,0 +1,397 @@
+.section-country {
+  background-color: var(--country-bg-color);
+  min-height: 100vh;
+  transition: background-color 0.3s;
+}
+
+.container {
+  max-width: 144rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8rem 8.2rem 0 8rem;
+}
+
+.cta-back:link,
+.cta-back:visited {
+  width: 13.6rem;
+  text-decoration: none;
+  padding: 1rem;
+  margin-bottom: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2rem;
+  background-color: var(--color-elements);
+  color: var(--text-color);
+
+  border-radius: 0.6rem;
+  box-shadow: 0 0 0.7rem 0 hsla(0, 0%, 0%, 0.29);
+  transition: all 0.3s;
+}
+
+.cta-back:hover,
+.cta-back:active,
+.cta-back:focus {
+  scale: 1.05;
+}
+
+.cta-back:focus {
+  box-shadow: 0 0 0 0.4rem var(--shadow-focus);
+}
+
+.back-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.country-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12.029rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+
+  max-width: 144rem;
+  width: 100%;
+}
+
+.country-wrapper img,
+.img-skeleton {
+  max-width: 56rem;
+  width: 100%;
+  max-height: 40.1rem;
+  border-radius: 1.01rem;
+  box-shadow: 0 0 1.4rem 0.4rem hsla(0, 0%, 0%, 0.03);
+}
+
+.img-skeleton {
+  height: 40.1rem;
+}
+
+.country-details {
+  height: fit-content;
+}
+
+.country-name {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 4.365rem;
+  margin-bottom: 2.3rem;
+}
+
+.country-name.skeleton {
+  height: 4rem;
+  width: 70%;
+  border-radius: 2rem;
+}
+
+.details-wrapper {
+  width: 25rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 14.1rem;
+  margin-bottom: 6.8rem;
+}
+
+.country-detail {
+  font-weight: 300;
+}
+
+.country-detail.skeleton {
+  height: 2.4rem;
+  border-radius: 2rem;
+  width: 50%;
+  margin-bottom: 0.8rem;
+}
+
+.country-detail.skeleton:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-weight: 400;
+}
+
+.country-borders {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.border-label {
+  font-weight: 600;
+  min-width: 13rem;
+}
+
+.border-label.skeleton {
+  height: 2.8rem;
+  border-radius: 2rem;
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+.borders-list {
+  max-width: 35.5rem;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.border-cta:link,
+.border-cta:visited {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.91rem;
+  color: var(--text-color);
+  background-color: var(--color-elements);
+
+  transition: all 0.3s;
+
+  border-radius: 1px;
+  box-shadow: 0 0 4px 1px hsla(0, 0%, 0%, 0.1);
+  padding: 0.4rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-cta.skeleton {
+  height: 1.5rem;
+  width: 8rem;
+  border-radius: 1.2rem;
+}
+
+.border-cta:hover,
+.border-cta:active,
+.border-cta:focus {
+  scale: 1.05;
+}
+
+.border-cta:focus {
+  box-shadow: 0 0 0 0.4rem var(--shadow-focus);
+}
+
+.not-found-wrapper {
+  width: fit-content;
+  padding: 3rem 6rem 3rem 6rem;
+  margin: 0 auto;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.7rem 0 hsla(0, 0%, 0%, 0.29);
+  color: var(--text-color);
+  background-color: var(--color-elements);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.not-found-title {
+  font-size: 2.5rem;
+  line-height: 4.365rem;
+  font-weight: 800;
+}
+
+.not-found-description {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+}
+
+/** QUERIES **/
+@media (max-width: 87.5em) {
+  .container {
+    padding-left: 3.5rem;
+    padding-right: 3.6rem;
+  }
+
+  .country-wrapper {
+    gap: 10rem;
+  }
+
+  .country-wrapper img,
+  .img-skeleton {
+    max-width: 48rem;
+    max-height: 36rem;
+  }
+
+  .img-skeleton {
+    height: 36rem;
+  }
+
+  .country-details {
+    width: 100%;
+  }
+
+  .details-wrapper {
+    width: 25rem;
+    column-gap: 14rem;
+  }
+
+  .country-borders {
+    justify-content: start;
+    gap: 2rem;
+  }
+
+  .borders-list {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 77.5em) {
+  .country-wrapper {
+    gap: 8rem;
+  }
+
+  .country-wrapper img,
+  .img-skeleton {
+    max-width: 40rem;
+    max-height: 30rem;
+  }
+
+  .img-skeleton {
+    height: 30rem;
+  }
+
+  .details-wrapper {
+    width: 25rem;
+    column-gap: 6rem;
+  }
+
+  .country-borders {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .borders-list {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 67.5em) {
+  .country-wrapper {
+    flex-direction: column;
+    gap: 5.5rem;
+    align-items: center;
+  }
+
+  .country-wrapper img,
+  .img-skeleton {
+    max-width: 56rem;
+    width: fit-content;
+    max-height: 36rem;
+  }
+
+  .img-skeleton {
+    width: 56rem;
+    height: 36rem;
+  }
+
+  .country-details {
+    width: 56rem;
+  }
+
+  .borders-list {
+    max-width: 56rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    padding: 5rem;
+  }
+
+  .country-wrapper {
+    font-size: 1.75rem;
+    line-height: 4rem;
+    align-items: start;
+  }
+
+  .country-wrapper img,
+  .img-skeleton {
+    width: 70%;
+    max-height: 32rem;
+  }
+
+  .img-skeleton {
+    height: 32rem;
+  }
+
+  .country-details {
+    width: 100%;
+  }
+
+  .country-name {
+    font-size: 2.75rem;
+    line-height: 3.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .details-wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: nowrap;
+    margin-bottom: 4.25rem;
+  }
+
+  .top {
+    margin-bottom: 4rem;
+  }
+
+  .border-cta:link,
+  .border-cta:visited {
+    font-size: 1.5rem;
+    line-height: 2.04rem;
+    padding: 0.75rem 1.5;
+  }
+
+  .border-label {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .container {
+    padding: 5rem 3.5rem 5rem 3.5rem;
+  }
+
+  .cta-back:link,
+  .cta-back:visited {
+    width: 13rem;
+    padding: 0.75rem;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+  }
+
+  .back-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .country-wrapper img,
+  .img-skeleton {
+    max-width: 40rem;
+    width: 100%;
+    max-height: 28.625rem;
+  }
+
+  .img-skeleton {
+    height: 28.625rem;
+  }
+}

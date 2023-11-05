@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  &,
+  &.light-mode {
+    --bg-color: hsl(0, 0%, 98%);
+    --country-bg-color: hsl(0, 0%, 100%);
+    --color-elements: hsl(0, 0%, 100%);
+    --text-color: hsla(200, 15%, 8%, 1);
+    --input-color: hsla(0, 0%, 52%, 1);
+    --shadow-focus: hsl(0, 0%, 52%, 0.2);
+    --bg-option-hover: #eee;
+    --bg-option-selected: #ddd;
+    --footer-cta-color: rgba(0, 50, 180, 0.8);
+  }
+
+  &.dark-mode {
+    --bg-color: hsla(207, 26%, 17%, 1);
+    --country-bg-color: var(--bg-color);
+    --color-elements: hsla(209, 23%, 22%, 1);
+    --text-color: hsla(0, 0%, 100%, 1);
+    --input-color: hsla(0, 0%, 100%, 1);
+    --shadow-focus: hsla(0, 0%, 100%, 0.5);
+    --bg-option-hover: #444;
+    --bg-option-selected: #333;
+    --footer-cta-color: hsl(0, 0%, 100%, 1);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  overflow-x: hidden;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem var(--shadow-focus);
+}
+
+.skeleton {
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+/** QUERIES **/
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+}

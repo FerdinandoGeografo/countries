@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CountriesService } from './services/countries.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <app-header></app-header>
+
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
+    <app-footer></app-footer>
+  `,
 })
-export class AppComponent {
-  title = 'rest-countries-api';
+export class AppComponent implements OnInit {
+  constructor(private countriesService: CountriesService) {}
+
+  ngOnInit(): void {
+    this.countriesService.loadCountries();
+  }
 }
